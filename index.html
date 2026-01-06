@@ -3,6 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for Ceramic soul brand" />
+    <meta name="author" content="Alexsey I" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Ceramic soul" />
+    <meta property="og:description" content="Bla bla bla" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Ceramic soul" />
+    <meta property="twitter:description" content="Bla bla bla" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/img/favicon//apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/img/favicon//apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/img/favicon//apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/img/favicon//apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/img/favicon//apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/img/favicon//apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/img/favicon//apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favicon//apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/img/favicon//android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/src/img/favicon//favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/src/img/favicon//ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>Ceramic Soul</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,9 +56,9 @@
             </div>
             <nav class="header__menu-nav">
               <ul>
-                <li><a href="#" class="header__menu-link">catalog</a></li>
-                <li><a href="#" class="header__menu-link">blog</a></li>
-                <li><a href="#" class="header__menu-link">about</a></li>
+                <li><a href="/catalog" class="header__menu-link">catalog</a></li>
+                <li><a href="/blog" class="header__menu-link">blog</a></li>
+                <li><a href="/about" class="header__menu-link">about</a></li>
               </ul>
             </nav>
           </div>
@@ -33,7 +68,7 @@
               <span></span>
               <span></span>
             </div>
-            <a href="#" class="header__logo"><img src="/src/logo/logo.png" alt="logo" /></a>
+            <a href="/index" class="header__logo"><img src="/src/logo/logo.png" alt="logo" /></a>
             <div class="header__icons">
               <a href="#"><span class="icon-search"></span></a>
               <a href="#"><span class="icon-shopping-bag"></span></a>
@@ -42,13 +77,13 @@
           <nav class="header__nav">
             <ul>
               <li>
-                <a href="#" class="header__link">catalog</a>
+                <a href="/catalog" class="header__link">catalog</a>
               </li>
               <li>
-                <a href="#" class="header__link">blog</a>
+                <a href="/blog" class="header__link">blog</a>
               </li>
               <li>
-                <a href="#" class="header__link">about</a>
+                <a href="/about" class="header__link">about</a>
               </li>
             </ul>
           </nav>
@@ -172,7 +207,7 @@
             <h2 class="footer__header">newsletter</h2>
             <div class="footer__text footer__text_spaced">Keep up to date with news and promotions</div>
             <form action="#" class="footer__form">
-              <input type="email" id="footer__email" class="footer__input" placeholder="Enter your e-mail" required />
+              <input type="email" id="footer__email" class="footer__input" placeholder="Enter your e-mail" name="footer__email" required />
               <div class="email-error-message"></div>
               <label for="footer__checkbox" class="footer__check-block">
                 <input type="checkbox" id="footer__checkbox" class="footer__checkbox" required />
@@ -188,8 +223,8 @@
               <h2 class="footer__header">discover</h2>
               <nav class="footer__nav">
                 <ul>
-                  <li class="footer__link"><a href="#">About Us</a></li>
-                  <li class="footer__link"><a href="#">Blog</a></li>
+                  <li class="footer__link"><a href="/about">About Us</a></li>
+                  <li class="footer__link"><a href="/blog">Blog</a></li>
                 </ul>
               </nav>
             </div>
@@ -197,7 +232,7 @@
               <h2 class="footer__header">shopping</h2>
               <nav class="footer__nav">
                 <ul>
-                  <li class="footer__link"><a href="#">Catalog</a></li>
+                  <li class="footer__link"><a href="/catalog">Catalog</a></li>
                 </ul>
               </nav>
             </div>
